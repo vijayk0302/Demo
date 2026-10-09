@@ -1,11 +1,301 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foodie Hub | Delicious Food</title>
+    <meta name="description" content="Discover delicious meals, explore our menu, and order your favorite food at Foodie Hub.">
 </head>
 <body>
-    
+
+    <!-- Header -->
+    <header>
+        <h1>🍔 Foodie Hub</h1>
+        <p>Fresh Food, Happy Mood!</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#menu">Our Menu</a> |
+            <a href="#specials">Specials</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Foodie Hub</h2>
+            <h3>Delicious Food Made with Love</h3>
+
+            <p>
+                Discover a world of amazing flavors with our freshly prepared
+                meals. From tasty burgers to delicious pizzas, we have something
+                for everyone.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                alt="Freshly prepared pizza"
+                width="400"
+            >
+
+            <p>
+                <a href="#menu">Explore Our Menu</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+
+            <p>
+                Welcome to Foodie Hub, where great taste meets quality.
+                We believe that food brings people together, and every meal
+                should be a memorable experience.
+            </p>
+
+            <p>
+                Our chefs use fresh ingredients to prepare delicious meals
+                for food lovers of all ages.
+            </p>
+
+            <h3>Why Choose Us?</h3>
+
+            <ul>
+                <li>Fresh and high-quality ingredients</li>
+                <li>Delicious food prepared daily</li>
+                <li>Affordable prices</li>
+                <li>Friendly customer service</li>
+                <li>A wide variety of dishes</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Food Menu</h2>
+            <p>Explore some of our most popular dishes.</p>
+
+            <article>
+                <h3>Classic Burger</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80"
+                    alt="Classic burger with lettuce and tomato"
+                    width="250"
+                >
+
+                <p>A juicy burger with fresh vegetables and a soft bun.</p>
+                <p><strong>Price: ₹149</strong></p>
+            </article>
+
+            <article>
+                <h3>Cheese Pizza</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80"
+                    alt="Delicious cheese pizza"
+                    width="250"
+                >
+
+                <p>Hot pizza topped with cheese, herbs, and fresh ingredients.</p>
+                <p><strong>Price: ₹249</strong></p>
+            </article>
+
+            <article>
+                <h3>French Fries</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80"
+                    alt="Crispy golden French fries"
+                    width="250"
+                >
+
+                <p>Crispy golden fries seasoned to perfection.</p>
+                <p><strong>Price: ₹99</strong></p>
+            </article>
+
+            <article>
+                <h3>Chocolate Dessert</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80"
+                    alt="Rich chocolate cake"
+                    width="250"
+                >
+
+                <p>A sweet and rich chocolate treat for dessert lovers.</p>
+                <p><strong>Price: ₹129</strong></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Specials Section -->
+        <section id="specials">
+            <h2>Today's Special Offers</h2>
+
+            <article>
+                <h3>Burger Combo</h3>
+                <p>Get a burger and French fries together.</p>
+                <p>
+                    <del>₹248</del>
+                    <strong> ₹199</strong>
+                </p>
+            </article>
+
+            <article>
+                <h3>Family Pizza Deal</h3>
+                <p>Enjoy a delicious pizza with your family and friends.</p>
+                <p>
+                    <del>₹499</del>
+                    <strong> ₹399</strong>
+                </p>
+            </article>
+
+            <p><strong>Limited-time offers. Visit us to enjoy these deals!</strong></p>
+        </section>
+
+        <hr>
+
+        <!-- Order Section -->
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <p>Fill in the details below to submit your food order request.</p>
+
+            <form action="#" method="get">
+
+                <label for="customer-name">Your Name:</label><br>
+                <input
+                    type="text"
+                    id="customer-name"
+                    name="customer-name"
+                    placeholder="Enter your name"
+                    required
+                >
+                <br><br>
+
+                <label for="food-item">Choose Your Food:</label><br>
+                <select id="food-item" name="food-item" required>
+                    <option value="">Select a dish</option>
+                    <option value="burger">Classic Burger - ₹149</option>
+                    <option value="pizza">Cheese Pizza - ₹249</option>
+                    <option value="fries">French Fries - ₹99</option>
+                    <option value="dessert">Chocolate Dessert - ₹129</option>
+                </select>
+                <br><br>
+
+                <label for="quantity">Quantity:</label><br>
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="20"
+                    value="1"
+                    required
+                >
+                <br><br>
+
+                <label for="address">Delivery Address:</label><br>
+                <textarea
+                    id="address"
+                    name="address"
+                    rows="4"
+                    cols="30"
+                    placeholder="Enter your delivery address"
+                    required
+                ></textarea>
+                <br><br>
+
+                <button type="submit">Submit Order</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p>Have a question? We'd love to hear from you.</p>
+
+            <p><strong>Address:</strong> Main Market, New Delhi, India</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> hello@foodiehub.example</p>
+
+            <h3>Send Us a Message</h3>
+
+            <form action="#" method="get">
+
+                <label for="name">Name:</label><br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                >
+                <br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="30"
+                    placeholder="Write your message here"
+                    required
+                ></textarea>
+                <br><br>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Foodie Hub</h2>
+        <p>Good Food. Good Mood. Great Memories.</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#menu">Menu</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <p>
+            Follow us:
+            <a href="https://www.instagram.com/">Instagram</a> |
+            <a href="https://www.facebook.com/">Facebook</a>
+        </p>
+
+        <p>&copy; 2026 Foodie Hub. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
